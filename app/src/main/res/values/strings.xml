@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BusTicket</string>
+    <string name="sign_up_information_title">Thông tin đăng kí</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="phone_number">SĐT</string>
+    <string name="sign_up_avatar_title">Ảnh đại diện</string>
+    <string name="contentDescription">Ảnh đại diện</string>
+    <string name="sign_up_take_picture">Chụp ảnh</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="buy_ticket">Mua vé</string>
+    <string name="total_money_title">Tổng tiền</string>
+    <string name="select_duration">Vui lòng chọn thời hạn vé</string>
+    <string name="select_bus_number_title">Vui lòng chọn tuyến xe</string>
+    <string name="select_ticket_type">Vui lòng chọn loại vé</string>
+    <string name="interline">Liên tuyến</string>
+    <string name="one_line">Một tuyến</string>
+    <string name="in_turn">Vé lượt</string>
+    <string name="select_city_title">Vui lòng chọn thành phố</string>
+    <string name="test">Test</string>
+    <string name="date_of_birth_text">14/05/1997</string>
+    <string name="phone_number_test">09641332014</string>
+    <string name="get_code">Lấy mã</string>
+    <string name="code_validate_title">Mã xác thực</string>
+    <string name="transition_name">transition_image</string>
+</resources>

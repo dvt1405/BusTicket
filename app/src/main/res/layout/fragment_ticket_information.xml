@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/avatar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/contentDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_bus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/bus_number_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar" />
+            <androidx.appcompat.widget.AppCompatTextView
+                app:layout_constraintTop_toBottomOf="@+id/avatar"
+                android:id="@+id/bus_number_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/ic_bus" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bus_number_2"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/bus_number_1"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/code_validate_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/code_validate_title"
+                app:layout_constraintEnd_toStartOf="@+id/code_validate_duration"
+                app:layout_constraintStart_toStartOf="@+id/background_code_validate"
+                app:layout_constraintTop_toTopOf="@+id/background_code_validate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/code_validate_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/code_validate_title"
+                android:text="@string/code_validate_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/background_code_validate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/code_validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/background_code_validate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/code_validate_title" />
+
+            <View
+                android:id="@+id/background_code_validate"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ic_bus" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_ticket_type"
+                android:layout_width="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="24dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_ticket_duration"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintStart_toEndOf="@+id/ticket_type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/period_time"
+                 />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ticket_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/ic_ticket_duration"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ic_ticket_type" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/period_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/ic_ticket_duration"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
