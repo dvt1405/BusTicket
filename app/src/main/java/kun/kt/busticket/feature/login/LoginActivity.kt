@@ -1,5 +1,6 @@
 package kun.kt.busticket.feature.login
 
+import Encrypt
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -31,6 +32,23 @@ class LoginActivity() : BaseTicketActivity() {
         ViewModelProvider(this, viewModelFactory).get(LoginViewModel::class.java)
         setContentView(R.layout.activity_login)
         replaceFragment(StartFragment(), StartFragment::class.java.name)
+
+        val e = Encrypt()
+        val code = "9094"
+        val number = "30A-100.01"
+        //String otp=null;
+        //String color=null;
+        //String otp=null;
+        //String color=null;
+        while (true) {
+            val t = e.process(code, number)
+            val code = "otp:[" + t[0] + "], color:[" + t[1] + "]"
+            Log.e("Code",code)
+            try {
+                Thread.sleep(5000)
+            } catch (e1: Exception) {
+            }
+        }
     }
 
     override fun onRequestPermissionsResult(
